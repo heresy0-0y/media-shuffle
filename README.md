@@ -39,27 +39,30 @@ Post all the videos, songs, articles, images you've saved for later to the appro
         {
             "id": "rectXeFLRVMNXbKa1",
             "fields": {
-                "title": "windowlicker - aphex twin",
                 "vibe": "songs i heard on tv",
-                "link": "https://www.youtube.com/watch?v=UBS4Gi1y_nc"
+                "link": "https://www.youtube.com/watch?v=UBS4Gi1y_nc",
+                "title": "windowlicker - aphex twin",
+                "mediaType": "audio"
             },
             "createdTime": "2021-01-19T19:17:37.000Z"
         },
         {
             "id": "rechCkys0dvqNfz6w",
             "fields": {
-                "title": "Joni Mitchell: 'I'm a fool for love'",
                 "vibe": "interviews with  my sages",
-                "link": "https://www.theguardian.com/music/2020/oct/27/joni-mitchell-interview-archives-early-years-cameron-crowe?utm_source=pocket-newtab"
+                "link": "https://www.theguardian.com/music/2020/oct/27/joni-mitchell-interview-archives-early-years-cameron-crowe?utm_source=pocket-newtab",
+                "title": "Joni Mitchell: 'I'm a fool for love'",
+                "mediaType": "article"
             },
             "createdTime": "2021-01-19T19:17:37.000Z"
         },
         {
             "id": "recs7l94ryKkshxN6",
             "fields": {
-                "title": "Sweet Jane - Miley Cyrus (mtv unplugged presents backyard sessions)",
                 "vibe": "so glad i get to be there,, performances on video",
-                "link": "https://www.youtube.com/watch?v=eIwiODeHHwc&list=WL&index=3"
+                "link": "https://www.youtube.com/watch?v=eIwiODeHHwc&list=WL&index=3",
+                "title": "Sweet Jane - Miley Cyrus (mtv unplugged presents backyard sessions)",
+                "mediaType": "video"
             },
             "createdTime": "2021-01-19T19:17:37.000Z"
         }
