@@ -13,12 +13,15 @@ Post all the videos, songs, articles, images you've saved for later to the appro
   Post-mvp will enable users to create their own categories.
 
 ## Wireframes
-![](./assets/wf1.png)
-![](./assets/wf2.png)
+
+![this one ](./assets/wf1.png)
+
+![the other one](./assets/wf2.png)
 
 
 ## Component Hierarchy
-![](./assets/PNG%20image.png)
+
+![thata one](./assets/PNG%20image.png)
 
 ## API and Data Sample
 
