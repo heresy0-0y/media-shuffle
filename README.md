@@ -14,9 +14,17 @@ Post all the videos, songs, articles, images you've saved for later to the appro
 
 ## Wireframes
 
-![this one ](./assets/wf1.PNG)
+![this one ](./assets/IMG_0271.PNG)
 
 ![the other one](./assets/wf2.PNG)
+
+![this one ](./assets/IMG_0270.PNG)
+
+![this one ](./assets/IMG_0268.PNG)
+
+![this one ](./assets/IMG_0267.PNG)
+
+![this one ](./assets/IMG_0269.PNG)
 
 
 ## Component Hierarchy
