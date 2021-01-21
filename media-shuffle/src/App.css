@@ -1,3 +1,11 @@
+nav {
+  display: flex;
+  padding: 5px;
+  width: 100vw;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
 .App {
   text-align: center;
 }

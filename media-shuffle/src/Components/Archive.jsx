@@ -1,6 +1,7 @@
 import { Link, Route } from 'react-router-dom';
+import ReactJkMusicPlayer from 'react-jinke-music-player';
+import 'react-jinke-music-player/assets/index.css'
 import ReactPlayer from 'react-player';
-import MediaFocus from './MediaFocus'
 
 function Archive(props) {
   const archive = props.archive;
@@ -8,19 +9,15 @@ function Archive(props) {
   return (
     <div className="archive">
       {archive.map((media) => (
-        <Link to={`/focus`}>
-          {/* <h1 alt={media.fields.link}>{media.fields.title}</h1> */}
-          {(media.fields.mediaType === 'audio' || media.fields.mediaType === 'video') ?(
-            <ReactPlayer url={media.fields.link}/>
-          ) : null}
+        <Link key={media.id} to={`/media/${media.id}`}>
+          {media.fields.title}
         </Link>
-      ))
-      }
-      {archive.map((media) => (
-        <Route path='/focus'>
-          <MediaFocus media={media}/>
-        </Route>
       ))}
+      {archive.map((media) => (
+          (media.fields.mediaType === 'video') ? (
+            <ReactPlayer url={media.fields.link} controls='true'/>
+          ) : null
+        ))}
     </div>
   )
 }
