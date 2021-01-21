@@ -24,27 +24,14 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <div>
-      {archive.map((media) => (
-        <h1>{media.fields.title}</h1>
-      ))
-      }
-      </div>
       <Route exact path="/" >
-        <div>
-      {archive.map((media) => (
-        <div>
-        <Link>
-          <image src={media.fields.link}/>
-              </Link></div>
-      ))
-      }</div>
+      <Archive archive={archive} />
       </Route>
       <Route path='/new'>
         <Form />
       </Route>
-      <Route path="/mediaShuffle/:mediaType">
-        <Archive archive={archive}  />
+      <Route path='/focus'>
+        <Archive archive={archive}/>
       </Route>
     </div>
   );
