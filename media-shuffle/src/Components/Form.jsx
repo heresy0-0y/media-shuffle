@@ -16,6 +16,7 @@ function Form(props) {
       coverImage,
       vibe,
       link,
+      mediaType,
     };
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((prev) => !prev);
@@ -47,6 +48,7 @@ function Form(props) {
       </select>
       <label htmlFor="media-type"> media type: </label>
       <select
+        id="select"
         name="mediaType"
         value={mediaType}
         type="text"
