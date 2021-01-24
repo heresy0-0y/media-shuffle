@@ -1,9 +1,27 @@
+/* font-family: 'Comfortaa', cursive; 
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
 nav {
   display: flex;
   padding: 5px;
   width: 100vw;
   box-sizing: border-box;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(14, 235, 154);
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App {

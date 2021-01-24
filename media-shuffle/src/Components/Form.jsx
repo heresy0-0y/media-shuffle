@@ -1,14 +1,19 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import { baseURL, config } from '../services';
+import Vibedown from './Vibedown';
 import axios from 'axios';
 
 function Form(props) {
   const [title, setTitle] = useState('')
   const [mediaType, setMediaType] = useState('')
-  const [vibe, setVibe] = useState('')
+  const vibe = props.vibe
+  const setVibe = props.setVibe
   const [link, setLink] = useState('')
   const [coverImage, setCoverImage] = useState('')
+  
+  const archive = props.archive;
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault()
     const fields = {
@@ -36,23 +41,18 @@ function Form(props) {
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        required
       />
-      <label htmlFor="vibe"> vibe: </label>
-      <select
-        name="vibe"
-        type="select"
-        value={vibe}
-        onChange={(e) => setVibe(e.target.value)}
-      >
-        <option>select vibe</option>
-      </select>
+      <Vibedown archive={archive} vibe={vibe} setVibe={setVibe}/>
       <label htmlFor="media-type"> media type: </label>
       <select
         id="select"
         name="mediaType"
         value={mediaType}
         type="text"
-        onChange={(e) => setMediaType(e.target.value)}>
+        onChange={(e) => setMediaType(e.target.value)}
+        required
+      >
         <option>select type</option>
         <option value='audio'> audio</option>
         <option type="text" value='video' >video</option>
@@ -64,6 +64,7 @@ function Form(props) {
         type="text"
         value={link}
         onChange={(e) => setLink(e.target.value)}
+        required
       />
       <label htmlFor="cover-image"> cover image: </label>
       <input
@@ -71,6 +72,7 @@ function Form(props) {
         type="text"
         value={coverImage}
         onChange={(e) => setCoverImage(e.target.value)}
+        required
       />
       <button type="submit">load 'er up</button>
     </form>

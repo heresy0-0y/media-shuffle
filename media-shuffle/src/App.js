@@ -11,24 +11,24 @@ import './App.css';
 function App() {
   const [archive, setArchive] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false);
+  const [vibe, setVibe] = useState('')
 
   useEffect(() => {
     const getArchive = async () => {
       const resp = await axios.get(baseURL, config);
       setArchive(resp.data.records);
     };
-    getArchive()
-    console.log(archive);
+    getArchive();
   }, [toggleFetch]);
 
   return (
     <div className="App">
       <Nav />
       <Route exact path="/" >
-      <Archive archive={archive} />
+      <Archive vibe={vibe} setVibe={setVibe} archive={archive} />
       </Route>
       <Route path='/new'>
-        <Form setToggleFetch={setToggleFetch}/>
+        <Form vibe={vibe} setVibe={setVibe} archive={archive} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path='/media/:id'>
         <MediaFocus archive={archive}/>
