@@ -2,6 +2,7 @@ import { useState} from 'react';
 import { baseURL, config } from '../services';
 import Vibedown from './Vibedown';
 import axios from 'axios';
+import './Form.css'
 
 function Form(props) {
   const [title, setTitle] = useState('')
@@ -46,6 +47,7 @@ function Form(props) {
       <Vibedown archive={archive} vibe={vibe} setVibe={setVibe}/>
       <label htmlFor="media-type"> media type: </label>
       <select
+        className='typeSelect'
         id="select"
         name="mediaType"
         value={mediaType}

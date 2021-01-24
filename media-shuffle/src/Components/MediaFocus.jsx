@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import ReactPlayer from 'react-player'
 import { useParams } from 'react-router-dom';
 import { urlMetadata } from 'url-metadata';
+import './MediaFocus.css'
 
 function MediaFocus(props) {
   const params = useParams();

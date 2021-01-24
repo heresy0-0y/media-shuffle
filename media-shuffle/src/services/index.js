@@ -8,8 +8,10 @@ export const config = {
 
 export const metaAuth = {
   headers: {
-    Authorization: `Basic ${process.env.URL_META_KEY}`
+    Authorization: `Basic ${process.env.URL_META_KEY}`,
+    Cookie: '__cfduid=d1d94adc511d74fb39339c029b4f68f081611515128'
   },
+  auth: `${process.env.auth}`
 };
 
 export const metaURL = `https://api.urlmeta.org/`
