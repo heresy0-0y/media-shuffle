@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #9f8289, #c2748c, #599d83, #36ab80);
+    background: linear-gradient(-45deg,#FFAC85, #F69C81, #5EE4B9, #00F5B4);
     background-size: 400% 400%;
     animation: gradient 24s ease infinite;
 }
@@ -32,27 +32,28 @@ body {
 select {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
   border-style: dotted;
   border-width: 2px;
-  border-color: #9f8289;
-  color: #13b97d;
+  border-color: rgba(19, 185, 125, 1.00);
+  color: #184597;
   background-color: rgba(169, 130, 141, .13);
   border-radius: 22px 7px;
   text-indent: 5%;
-  text-shadow: 1px 1px 3px #da7091;
-  transition: 2s ease-in-out;
+  text-shadow: 1px 1px 3px #415497;
+  transition: 5s ease-in-out;
 }
 
-nav select:hover {
-  color: #da7091;
-  background-color: rgba(54, 171, 128, .73);
-  text-shadow: 1px 1px 3px #13b97d, 1px 1px 3px #13b97d, 1px 1px 3px #13b97d, 1px 1px 3px #13b97d;
-  letter-spacing: .65rem;
+nav select:hover { 
+  color: #415497;
+  background-color: rgba(164, 194, 159, 0.3);
+  text-shadow: 1px 1px 3px #9dc3a1, 1px 1px 3px #184597, 1px 1px 3px#FF967E, 1px 1px 3px #184597;
+  letter-spacing: .1em;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-indent: 10%;
-  animation: horizontally 15s ease-in-out infinite alternate;
+  overflow: hidden;
+  animation: horizontally 15s linear infinite alternate;
 }
 
 @keyframes horizontally {
@@ -65,10 +66,6 @@ nav select:hover {
   100% {
     text-indent: 80%;
   }
-}
-
-.typeSelect {
-  width: 200px
 }
 
 nav {
@@ -84,12 +81,12 @@ nav {
 
 a {
   text-decoration: none;
-  color: rgb(19, 186, 125);
-  text-shadow: 1px 1px 3px #da7091;
+  color: #184597;
+  text-shadow: 1px 1px 3px #415497;
   font-family: 'Comfortaa', cursive;
 }
 
 a:hover {
-  color: palevioletred;
-  text-shadow: 1px 1px 3px #13b97d;
+  color: #415497;
+  text-shadow: 3px 3px 5px #184597;
 }

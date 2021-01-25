@@ -1,7 +1,5 @@
-import { useEffect } from 'react';
 import ReactPlayer from 'react-player'
 import { useParams } from 'react-router-dom';
-import { urlMetadata } from 'url-metadata';
 import './MediaFocus.css'
 
 function MediaFocus(props) {
@@ -12,15 +10,15 @@ function MediaFocus(props) {
 
   if (!media) {
     return (
-      <div className='media'>
+      <div className='mediaFocus'>
         <h4>Loading...</h4>
       </div>
     );
   }
 
   return (
-    <div className='media'>
-      <h1>{media.fields.title}</h1>
+    <div className='mediaFocus'>
+      <h1 className='title'>{media.fields.title}</h1>
       <ReactPlayer url={media.fields.link} wrapper="section"/>
     </div>
     )
