@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import { Route } from 'react-router-dom';
 import axios from 'axios';
-import {baseURL, config} from './services'
+import {baseURL, config, metaAuth, metaURL} from './services'
 import Nav from './components/Nav';
 import Form from './components/Form';
 import MediaFocus from './components/MediaFocus.jsx'
@@ -13,6 +13,18 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
   const [vibe, setVibe] = useState('')
   const [currentArchive, setCurrentArchive] = useState([])
+
+  useEffect(() => {
+    archive.map((media) => {
+    const queryURL = `http://corsanywhere.herokuapp.com/${media.fields.link}`;
+    const url = `${metaURL}?url=${queryURL}/?raw=true`
+    const getMeta = async () => {
+      const resp = await axios.get(url, metaAuth);
+      console.log(resp);
+    };
+    media.meta = getMeta();
+      return getMeta();
+  })}, [archive]);
 
   useEffect(() => {
     const getArchive = async () => {
