@@ -1,15 +1,9 @@
 import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
-import axios from 'axios';
-import {metaURL, metaAuth} from '../services';
-import ReactPlayer from 'react-player';
-import Vibedown from './Vibedown'
 import './Archive.css'
 
 function Archive(props) {
-  const archive = props.archive;
   const vibe = props.vibe
-  const setVibe = props.setVibe
   const currentArchive = props.currentArchive
   const [render, setRender] = useState('')
 

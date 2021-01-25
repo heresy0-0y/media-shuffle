@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './Vibedown.css'
 
 function Vibedown(props) {
   const [vibes, setVibes] = useState([]);
