@@ -25,7 +25,6 @@ function Archive(props) {
         setRender((currentArchive.map((media) => 
           (<section className="mediaPreview">
             <Link key={media.id} to={`/media/${media.id}`}>
-              {media.fields.title}
             <img className='mediaImage' alt={media.fields.title} src={media.fields.coverImage} />
             </Link>
           </section>)
@@ -49,7 +48,6 @@ function Archive(props) {
 
   return (
     <div className="archive">
-      <Vibedown archive={archive} vibe={vibe} setVibe={setVibe}/>
       {render}
     </div>
   )

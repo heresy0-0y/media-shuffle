@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, Switch, useLocation, Route } from 'react-router-dom';
+import Vibedown from './Vibedown.jsx'
 
 function Nav(props) {
   const [currentLocation, setCurrentLocation] = useState('/')
-
   const location = useLocation();
+  const vibe = props.vibe
+  const setVibe = props.setVibe
+  const archive = props.archive
 
   useEffect(() => {
     return () => {
@@ -19,7 +22,8 @@ function Nav(props) {
       <Link to='/'>
         <h2>home
         </h2>
-      </Link>
+          </Link>
+          <Vibedown default='all the vibes' archive={archive} vibe={vibe} setVibe={setVibe} />
       <Link to='/new'>
         <h2>
           save somethin new

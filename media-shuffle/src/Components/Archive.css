@@ -1,8 +1,10 @@
 div.archive {
-  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
 }
 
 img {
   height: auto;
-  width: 30%;
+  width: 100%;
 }

@@ -18,8 +18,8 @@ function Vibedown(props) {
   }, [archive]);
 
   return (
-    <div>
-      <label htmlFor="vibe"> vibe: </label>
+    <div className="vibedown">
+      <label htmlFor="vibe"></label>
       <select
         name="vibe"
         type="select"
@@ -27,7 +27,7 @@ function Vibedown(props) {
         onChange={(e) => props.setVibe(e.target.value)}
         // required
       >
-        <option value=''>select vibe</option>
+        <option value=''>{props.default}</option>
         {vibes}
       </select>
     </div>

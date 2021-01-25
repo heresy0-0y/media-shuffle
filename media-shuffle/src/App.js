@@ -42,7 +42,7 @@ function App() {
   
   return (
     <div className="App">
-      <Nav />
+      <Nav vibe={vibe} setVibe={setVibe} archive={archive}/>
       <Route exact path="/" >
       <Archive currentArchive={currentArchive} vibe={vibe} setVibe={setVibe} archive={archive} />
       </Route>
