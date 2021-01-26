@@ -11,19 +11,16 @@
   align-content: center;
   background: linear-gradient(
     45deg,
-    #ffac8556,
-    #f69c8143,
-    #5ee4ba45,
-    #00f5b448
+    #092A3E, #1b1e39, #2e1234, #420630
   );
   background-size: 400% 400%;
-  animation: gradient 24s ease-in-out infinite;
+  animation: gradient 21s ease-in-out infinite;
 }
 
 nav select:hover {
-  color: #415497;
+  color: #93B1FF;
   background-color: rgba(164, 194, 159, 0.3);
-  text-shadow: 1px 1px 3px #9dc3a1, 1px 1px 3px #184597, 1px 1px 3px#FF967E,
+  text-shadow: 1px 1px 3px #9dc3a1, 1px 1px 3px #184597, 1px 1px 3px#93B1FF,
     1px 1px 3px #184597;
   letter-spacing: 0.1em;
   font-weight: 700;

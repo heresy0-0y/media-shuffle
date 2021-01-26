@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  background: linear-gradient(-45deg, #ffac85, #f69c81, #5ee4b9, #00f5b4);
+  background: linear-gradient(-45deg, #420630, #2e1234, #1b1e39, #092A3E);
   background-size: 400% 400%;
   animation: gradient 14s ease-in-out infinite;
 }
@@ -37,7 +37,7 @@ select {
   border-style: dotted;
   border-width: 2px;
   border-color: rgba(19, 185, 125, 1);
-  color: #57eebe;
+  color: #39C99B;
   background-color: rgba(169, 130, 141, 0.13);
   border-radius: 22px 7px;
   text-indent: 5%;
@@ -60,7 +60,7 @@ select {
 
 a {
   text-decoration: none;
-  color: #57eebe;
+  color: #39C99B;
   text-shadow: 1px 1px 3px #415497;
   font-family: "Comfortaa", cursive;
 }

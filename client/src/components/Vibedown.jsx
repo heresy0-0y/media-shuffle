@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import './Vibedown.css'
+import "./Vibedown.css";
 
 function Vibedown(props) {
   const [vibes, setVibes] = useState([]);
@@ -7,12 +7,13 @@ function Vibedown(props) {
 
   useEffect(() => {
     const vibeOptions = () => {
-      const vibes = archive
-        .reduce((acc, media) => {
-          if (!acc.includes(media.fields.vibe)) acc.push(media.fields.vibe);
-          return acc;
-        }, [])
-        .map((vibe) => <option>{vibe}</option>);
+      const vibes = archive.reduce((acc, media) => {
+        const { vibe } = media.fields;
+        if (!acc.includes(media.fields.vibe)) {
+          acc.push(vibe);
+        }
+        return acc;
+      }, []);
       setVibes(vibes);
     };
     vibeOptions();
@@ -28,8 +29,12 @@ function Vibedown(props) {
         onChange={(e) => props.setVibe(e.target.value)}
         // required
       >
-        <option value=''>{props.default}</option>
-        {vibes}
+        <option value="">{props.default}</option>
+        {vibes.map((vibe, index) => (
+          <option key={"vibe" + index} value={vibe}>
+            {vibe}
+          </option>
+        ))}
       </select>
     </div>
   );

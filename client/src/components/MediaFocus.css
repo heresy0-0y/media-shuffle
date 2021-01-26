@@ -6,7 +6,8 @@ div.mediaFocus {
 
 h1.title {
   text-align: center;
-  color: #2d2399;
-  text-shadow: 1px 1px 3px #415497;
+  color: #00cd9c;
+  text-shadow: 1px 1px 3px #5dbade;
   font-family: 'Comfortaa', cursive;
+  font-variant: small-caps;
 }

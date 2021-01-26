@@ -32,8 +32,8 @@ function Nav(props) {
           <Link to="/new">
             <h2>save somethin new</h2>
           </Link>
-          <Link class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <Link className="bars" to="/headnav">
+            <i className="bars"></i>
           </Link>
         </Route>
         <Route path="/new">
@@ -47,6 +47,11 @@ function Nav(props) {
           </Link>
           <Link to="/new">
             <h2>save somethin new</h2>
+          </Link>
+        </Route>
+        <Route path="/headnav">
+          <Link to='/'>
+            <h2>home</h2>
           </Link>
         </Route>
       </Switch>

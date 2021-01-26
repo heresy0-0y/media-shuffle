@@ -1,25 +1,50 @@
 /* https://codepen.io/rachelandrew/pen/QWEmPvK masonry grid */
-
-div.archive {
-  column-count: 4;
-  column-gap: 5px;
+div.archive{
+  column-gap: 4px;
+  column-count: 2;
 }
 
 img {
-  height: auto;
-  width: 100%;
-  display:block;
-}
+    height: auto;
+    width: 100%;
+    display: block;
+  }
 
-figure.mediaPreview {
-  margin: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 4px;
-  break-inside: avoid;
-}
+  figure.mediaPreview {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 4px;
+    break-inside: avoid;
+  }
 
-figure > img {
-  grid-row: 1 / -1;
-  grid-column: 1;
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+
+@media only screen and (min-width: 768px) {
+  div.archive {
+    column-count: 4;
+    column-gap: 5px;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  figure.mediaPreview {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 4px;
+    break-inside: avoid;
+  }
+
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
 }
