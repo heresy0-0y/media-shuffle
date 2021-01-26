@@ -1,0 +1,49 @@
+.headnav {
+  overflow: hidden;
+  margin-top: 0;
+  height: 75px;
+  display: flex;
+  padding: 0 5px 10px 5px;
+  width: 100vw;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(
+    45deg,
+    #ffac8556,
+    #f69c8143,
+    #5ee4ba45,
+    #00f5b448
+  );
+  background-size: 400% 400%;
+  animation: gradient 24s ease-in-out infinite;
+}
+
+nav select:hover {
+  color: #415497;
+  background-color: rgba(164, 194, 159, 0.3);
+  text-shadow: 1px 1px 3px #9dc3a1, 1px 1px 3px #184597, 1px 1px 3px#FF967E,
+    1px 1px 3px #184597;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-indent: 10%;
+  overflow: hidden;
+  animation: horizontally 15s linear infinite alternate;
+}
+
+@media screen and (max-width: 600px) {
+  .headnav a:not(:first-child)
+  {display: none;}
+  .headnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .headnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

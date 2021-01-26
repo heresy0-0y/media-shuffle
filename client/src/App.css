@@ -2,59 +2,49 @@
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 /* https://www.sliderrevolution.com/resources/css-animated-background/*/
-html, body {
+html,
+body {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 body {
-    background: linear-gradient(-45deg,#FFAC85, #F69C81, #5EE4B9, #00F5B4);
-    background-size: 400% 400%;
-    animation: gradient 24s ease infinite;
+  background: linear-gradient(-45deg, #ffac85, #f69c81, #5ee4b9, #00f5b4);
+  background-size: 400% 400%;
+  animation: gradient 14s ease-in-out infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 select {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-size: 1.1em;
   border-style: dotted;
   border-width: 2px;
-  border-color: rgba(19, 185, 125, 1.00);
-  color: #184597;
-  background-color: rgba(169, 130, 141, .13);
+  border-color: rgba(19, 185, 125, 1);
+  color: #57eebe;
+  background-color: rgba(169, 130, 141, 0.13);
   border-radius: 22px 7px;
   text-indent: 5%;
   text-shadow: 1px 1px 3px #415497;
   transition: 5s ease-in-out;
 }
 
-nav select:hover { 
-  color: #415497;
-  background-color: rgba(164, 194, 159, 0.3);
-  text-shadow: 1px 1px 3px #9dc3a1, 1px 1px 3px #184597, 1px 1px 3px#FF967E, 1px 1px 3px #184597;
-  letter-spacing: .1em;
-  font-weight: 700;
-  font-size: 1.2em;
-  text-indent: 10%;
-  overflow: hidden;
-  animation: horizontally 15s linear infinite alternate;
-}
 
 @keyframes horizontally {
   0% {
@@ -68,22 +58,11 @@ nav select:hover {
   }
 }
 
-nav {
-  margin-top: 0;
-  display: flex;
-  padding: 0 5px 10px 5px;
-  width: 100vw;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-
 a {
   text-decoration: none;
-  color: #184597;
+  color: #57eebe;
   text-shadow: 1px 1px 3px #415497;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 a:hover {

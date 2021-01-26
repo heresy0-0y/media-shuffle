@@ -17,11 +17,11 @@ function Archive(props) {
         ))
       } else {
         setRender((currentArchive.map((media) => 
-          (<section className="mediaPreview">
+          (<figure className="mediaPreview">
             <Link key={media.id} to={`/media/${media.id}`}>
             <img className='mediaImage' alt={media.fields.title} src={media.fields.coverImage} />
             </Link>
-          </section>)
+          </figure>)
         )))
       }
     }
