@@ -39,6 +39,7 @@ form {
     border-color: #5dbade;
     transition: 0.4s ease-in-out;
     color: #30c3bd;
+    outline: none;
   }
 
   label {
@@ -64,6 +65,7 @@ form {
     margin: 0 14px 0 14px;
     align-self: center;
     transition: 0.4s ease-in-out;
+    outline: invert;
   }
 
   button:hover {
