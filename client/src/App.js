@@ -26,21 +26,33 @@ function App() {
   //     return article;
   //   }
   //   getArticle();
-  // }, []);
+  // // }, []);
+  // const metascraper = require("metascraper")([
+  //   require("metascraper-author")(),
+  //   require("metascraper-date")(),
+  //   require("metascraper-description")(),
+  //   require("metascraper-image")(),
+  //   require("metascraper-logo")(),
+  //   require("metascraper-clearbit")(),
+  //   require("metascraper-publisher")(),
+  //   require("metascraper-title")(),
+  //   require("metascraper-url")(),
+  //   require("metascraper-youtube")(),
+  // ]);
+
+  // const got = require("got");
+
+  // const targetUrl =
+  //   "https://www.theguardian.com/music/2020/oct/27/joni-mitchell-interview-archives-early-years-cameron-crowe?utm_source=pocket-newtab";
 
   // useEffect(() => {
-  //   archive.map((media) => {
-  //     const queryURL = `${media.fields.link}`;
-  //     const url = `http://corsanywhere.herokuapp.com/${metaURL}?url=${queryURL}`;
-  //     const getMeta = async () => {
-  //       const resp = await axios.get(url, metaAuth);
-  //       const meta = resp;
-  //       console.log(meta);
-  //     };
-  //     media.meta = getMeta();
-  //     return getMeta();
-  //   });
-  // }, [archive]);
+  //   const getMeta = async () => {
+  //     const { body: html, url } = await got(targetUrl);
+  //     const metadata = await metascraper({ html, url });
+  //     console.log(metadata);
+  //   };
+  //   getMeta();
+  // }, [got, metascraper]);
 
   useEffect(() => {
     const getArchive = async () => {

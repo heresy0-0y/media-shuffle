@@ -16,7 +16,6 @@
   border-bottom-color: #1c1e3982;
 }
 
-
 @media screen and (max-width: 600px) {
   .headnav a:not(:first-child) {
     display: none;

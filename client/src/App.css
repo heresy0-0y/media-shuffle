@@ -33,11 +33,12 @@ body {
 a {
   text-decoration: none;
   color: #39c99b;
-  text-shadow: 1px 1px 3px #415497;
+  text-shadow: 1px 1px 3px #415497, -1px -1px 1px #5dbade;
   font-family: "Comfortaa", cursive;
+  transition: 0.4s ease-in-out;
 }
 
 a:hover {
-  color: #415497;
-  text-shadow: 3px 3px 5px #184597;
+  color: #93b1ff;
+  text-shadow: 3px 3px 5px #1c1d39, -3px -3px 3px #39c99b;
 }
