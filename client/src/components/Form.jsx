@@ -43,6 +43,7 @@ function Form(props) {
           required
         />
         <Vibedown
+          className="formSelect"
           default="the vibe"
           archive={archive}
           vibe={vibe}
@@ -50,7 +51,7 @@ function Form(props) {
         />
         <label htmlFor="media-type"> media type: </label>
         <select
-          className="typeSelect"
+          className="formSelect"
           id="select"
           name="mediaType"
           value={mediaType}

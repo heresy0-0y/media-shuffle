@@ -9,21 +9,20 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  background: linear-gradient(
-    45deg,
-    #092A3E, #1b1e39, #2e1234, #420630
-  );
+  background: linear-gradient(45deg, #092a3e, #1b1e39, #2e1234, #420630);
   background-size: 400% 400%;
   animation: gradient 21s ease-in-out infinite;
+  border-bottom-style: ridge;
+  border-bottom-color: #1c1e3982;
 }
 
 nav select:hover {
-  color: #93B1FF;
-  background-color: rgba(164, 194, 159, 0.3);
-  text-shadow: 1px 1px 3px #9dc3a1, 1px 1px 3px #184597, 1px 1px 3px#93B1FF,
-    1px 1px 3px #184597;
+  color: #93b1ff;
+  background: linear-gradient(-45deg, #4206309f, #2e12349f);
+  text-shadow: 1px 1px 3px #0a2a3e, -1px -1px 1px #30c3bd, -1px 1px 2px #1c1e39;
   letter-spacing: 0.1em;
   font-weight: 700;
+  border-style: hidden;
   font-size: 1.2em;
   text-indent: 10%;
   overflow: hidden;
@@ -31,8 +30,9 @@ nav select:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .headnav a:not(:first-child)
-  {display: none;}
+  .headnav a:not(:first-child) {
+    display: none;
+  }
   .headnav a.icon {
     position: absolute;
     right: 0;

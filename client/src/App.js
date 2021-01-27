@@ -17,8 +17,8 @@ function App() {
   // const [articles, setArticles] = useState([]);
   const herstory = useHistory();
 
-  const thisurl =
-    "https://www.theguardian.com/music/2020/oct/27/joni-mitchell-interview-archives-early-years-cameron-crowe?utm_source=pocket-newtab";
+  // const thisurl =
+  //   "https://www.theguardian.com/music/2020/oct/27/joni-mitchell-interview-archives-early-years-cameron-crowe?utm_source=pocket-newtab";
 
   // useEffect(() => {
   //   const getArticle = async () => {

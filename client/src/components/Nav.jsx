@@ -50,7 +50,7 @@ function Nav(props) {
           </Link>
         </Route>
         <Route path="/headnav">
-          <Link to='/'>
+          <Link to="/">
             <h2>home</h2>
           </Link>
         </Route>

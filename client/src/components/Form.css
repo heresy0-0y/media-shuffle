@@ -3,7 +3,7 @@ form {
   justify-content: space-evenly;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(229, 103, 143, 0.14);
+  background: linear-gradient(-45deg, #4206309f, #2e12349f);
   border-radius: 44px;
   max-width: 60%;
   height: auto;
@@ -13,47 +13,48 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
-  
   div.form {
     display: flex;
     min-height: 50vw;
   }
 
-  
   div.vibedown {
     max-width: 100%;
   }
 
-  select {
+  select.formSelect {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     align-self: center;
     width: 55%;
-    border-color: rgba(19, 185, 125, 1);
+    border-style: groove;
+    border-color: #5dbade;
+    outline: none;
   }
 
   input {
     margin: 0 54px 0 54px;
     background-color: rgba(1, 1, 1, 0.1);
-    border-color: rgba(19, 185, 125, 1);
+    border-color: #5dbade;
+    transition: 0.4s ease-in-out;
   }
 
   label {
     color: #93b1ff;
-    text-shadow: 1px 1px 3px #415497;
+    text-shadow: 1px 1px 3px #30c3bd;
     font-size: 1.2em;
   }
 
   button {
-    background-color: rgba(89, 158, 131, 0.1);
-
+    background: linear-gradient(-45deg, #420630, #2e1234, #1b1e39);
     border-width: 2px;
-    border-color: rgba(19, 185, 125, 1);
+    border-color: #5dbade;
     color: #39c99b;
-    background-color: rgba(169, 130, 141, 0.13);
     border-radius: 17px 27px;
     width: 34%;
+    background-size: 400% 400%;
+    animation: gradient 14s ease-in-out infinite;
     font-family: "Rajdhani", sans-serif;
     font-weight: 700;
     font-size: 1.2em;
@@ -61,16 +62,19 @@ form {
     text-shadow: 1px 1px 3px #415497;
     margin: 0 14px 0 14px;
     align-self: center;
+    transition: 0.4s ease-in-out;
   }
 
-button:hover {
-}
+  button:hover {
+    box-shadow: -2px -2px 2px #93b1ff, 2px -2px 3px #93b1ff,
+      -2px 2px 4px #93b1ff, 2px 2px 4px #93b1ff;
+  }
 
-input:hover {
-}
+  input:hover {
+    box-shadow: 2px 2px 4px #93b1ff;
+  }
 
-select:hover {
+  select:hover {
+    box-shadow: 2px 2px 4px #93b1ff;
+  }
 }
-
-}
-

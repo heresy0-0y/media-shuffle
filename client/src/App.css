@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  background: linear-gradient(-45deg, #420630, #2e1234, #1b1e39, #092A3E);
+  background: linear-gradient(-45deg, #420630, #2e1234, #1b1e39, #092a3e);
   background-size: 400% 400%;
   animation: gradient 14s ease-in-out infinite;
 }
@@ -30,37 +30,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-select {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
-  font-size: 1.1em;
-  border-style: dotted;
-  border-width: 2px;
-  border-color: rgba(19, 185, 125, 1);
-  color: #39C99B;
-  background-color: rgba(169, 130, 141, 0.13);
-  border-radius: 22px 7px;
-  text-indent: 5%;
-  text-shadow: 1px 1px 3px #415497;
-  transition: 5s ease-in-out;
-}
-
-
-@keyframes horizontally {
-  0% {
-    text-indent: 5%;
-  }
-  50% {
-    text-indent: -10%;
-  }
-  100% {
-    text-indent: 80%;
-  }
-}
-
 a {
   text-decoration: none;
-  color: #39C99B;
+  color: #39c99b;
   text-shadow: 1px 1px 3px #415497;
   font-family: "Comfortaa", cursive;
 }
