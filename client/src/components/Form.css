@@ -12,12 +12,12 @@ form {
   box-shadow: 1px 1px 3px #12b97c;
 }
 
+div.form {
+  margin-top: 6px;
+  display: flex;
+  min-height: 50vw;
+}
 @media only screen and (min-width: 768px) {
-  div.form {
-    display: flex;
-    min-height: 50vw;
-  }
-
   div.vibedown {
     max-width: 100%;
   }
@@ -65,7 +65,7 @@ form {
     margin: 0 14px 0 14px;
     align-self: center;
     transition: 0.4s ease-in-out;
-    outline: invert;
+    outline: none;
   }
 
   button:hover {
