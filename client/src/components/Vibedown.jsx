@@ -27,7 +27,7 @@ function Vibedown(props) {
         type="select"
         value={props.vibe}
         onChange={(e) => props.setVibe(e.target.value)}
-        // required
+        required
       >
         <option value="">{props.default}</option>
         {vibes.map((vibe, index) => (
